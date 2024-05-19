@@ -1,0 +1,74 @@
+<style>
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para títulos */
+h1, h2, h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Estilos para los enlaces dentro de la navegación */
+nav a {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para los enlaces dentro de los párrafos */
+p a {
+    font-family: Arial, sans-serif;
+}
+
+/* Otros estilos para párrafos y otros elementos de texto */
+p {
+    font-family: Arial, sans-serif;
+}
+
+/* Resto de estilos... */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+header img {
+    width: 100px; /* Ajusta el ancho de la imagen según sea necesario */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover {
+    background-color: #555;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-bottom: 60px; /* Margen inferior para evitar que el contenido se oculte detrás del footer */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilo para resaltar el enlace activo en la navegación */
+nav a.active {
+    background-color: #666;
+}
+</style>
