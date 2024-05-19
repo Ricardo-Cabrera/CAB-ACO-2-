@@ -8,7 +8,9 @@ body {
 h1, h2, h3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
+li {
+  font-family: Arial, sans-serif;
+}
 /* Estilos para los enlaces dentro de la navegación */
 nav a {
     font-family: Arial, sans-serif;
