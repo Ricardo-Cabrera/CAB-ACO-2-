@@ -1,33 +1,52 @@
-<style>
 /* Estilos para el cuerpo del documento */
 body {
     font-family: Arial, sans-serif;
+    background-image: url('videoseguridad.gif'); /* Ruta de tu imagen animada */
+    background-size: cover;
+    background-position: top; /* Ajusta la posición para que comience desde arriba */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    animation: animatedBackground 60s linear infinite; /* Animación de fondo */
 }
 
 /* Estilos para títulos */
 h1, h2, h3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+/* Estilos para listas */
 li {
-  font-family: Arial, sans-serif;
-}
-/* Estilos para los enlaces dentro de la navegación */
-nav a {
     font-family: Arial, sans-serif;
 }
 
-/* Estilos para los enlaces dentro de los párrafos */
+/* Estilos para enlaces dentro de la navegación */
+nav a {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav a.active {
+    background-color: #666;
+}
+
+/* Estilos para enlaces dentro de párrafos */
 p a {
     font-family: Arial, sans-serif;
 }
 
-/* Otros estilos para párrafos y otros elementos de texto */
+/* Otros estilos para párrafos y elementos de texto */
 p {
     font-family: Arial, sans-serif;
 }
 
-/* Resto de estilos... */
-
+/* Estilos para el header */
 header {
     background-color: #333;
     color: #fff;
@@ -37,49 +56,44 @@ header {
     align-items: center; /* Centra verticalmente los elementos */
     justify-content: center; /* Centra horizontalmente los elementos */
 }
+
 header img {
-    width: 100px; /* Ajusta el ancho de la imagen según sea necesario */
+    width: 200px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto; /* Ajusta la altura automáticamente */
     margin-right: 10px; /* Espacio entre la imagen y el texto */
 }
+
+/* Estilos para la navegación */
 nav {
     background-color: #444;
     padding: 10px 0;
     text-align: center;
 }
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-nav a:hover {
-    background-color: #555;
-}
+
+/* Estilos para el contenedor principal */
 .container {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     margin-bottom: 60px; /* Margen inferior para evitar que el contenido se oculte detrás del footer */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
+
+/* Estilos para el footer */
 footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
+    text-align: center; /* Asegura que el texto esté centrado */
     padding: 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
-/* Estilo para resaltar el enlace activo en la navegación */
-nav a.active {
-    background-color: #666;
-}
-.panel {
-    display: none;
-    padding: 10px;
-}
 
+/* Estilos para los elementos de acordeón */
 .accordion {
-    background-color: #eee;
+    background-color: rgba(238, 238, 238, 0.8); /* Fondo semi-transparente */
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -91,14 +105,21 @@ nav a.active {
 }
 
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: rgba(204, 204, 204, 0.8); /* Fondo semi-transparente */
 }
 
+/* Estilos para los paneles de acordeón */
 .panel {
-    padding: 0 18px;
-    background-color: white;
+    padding: 18px; /* Ajusta el padding según sea necesario */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
     display: none;
     overflow: hidden;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-</style>
+/* Animación de fondo */
+@keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
