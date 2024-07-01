@@ -154,11 +154,42 @@ ul li strong {
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
-    .container {
-        padding: 10px;
+    header {
+        padding: 10px; /* Reducir el padding del header para dispositivos móviles */
     }
 
-    h1, h2, h3 {
-        font-size: 1.2em;
+    .header-container {
+        flex-direction: column; /* Cambiar a disposición en columna para dispositivos móviles */
+        align-items: center; /* Centrar verticalmente los elementos */
+    }
+
+    header img {
+        width: 60px; /* Reducir el tamaño del logo para dispositivos móviles */
+        margin-bottom: 10px; /* Espacio entre el logo y el texto */
+    }
+
+    header .logo-nombre {
+        width: 120px; /* Reducir el tamaño del logo con nombre para dispositivos móviles */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambiar a disposición en columna para dispositivos móviles */
+        align-items: center; /* Centrar elementos de navegación verticalmente */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espacio entre elementos de navegación */
+    }
+
+    nav ul li a {
+        padding: 8px 15px; /* Reducir el padding de los enlaces de navegación */
+    }
+
+    .container {
+        padding: 15px; /* Ajustar el padding del contenedor principal para dispositivos móviles */
+    }
+
+    h2.accordion {
+        font-size: 1.5em; /* Ajustar tamaño de los títulos de acordeón para dispositivos móviles */
     }
 }
