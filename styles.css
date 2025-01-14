@@ -1,33 +1,226 @@
+/* Sección Home */
+#home .hero {
+    background: url('images/cabacoparche.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+#home .hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#home .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+#home .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#home .btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#home .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Sección del director */
+.director-section {
+    padding: 40px 20px; /* Espaciado interno */
+    background-color: #fffff; /* Fondo suave */
+}
+/* Contenedor del título del director */
+/* Estilos para el contenedor del título y subtítulo */
+.director-title-container {
+    background-color: #1A1A1A; /* Fondo oscuro */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Ajusta el tamaño al contenido */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin-bottom: 20px; /* Espacio debajo del contenedor */
+    text-align: center; /* Centra el texto */
+}
+
+.director-title-container h2 {
+    font-size: 1.8rem; /* Tamaño del título */
+    margin: 0; /* Elimina el margen predeterminado */
+    color: #fff; /* Color del texto */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.director-title-container h3 {
+    font-size: 1.2rem; /* Tamaño del subtítulo */
+    color: #bbb; /* Color más suave para el subtítulo */
+    margin-top: 5px; /* Espacio superior para separar el título del subtítulo */
+    font-style: italic; /* Estilo de texto en cursiva */
+}
+
+
+.director-container {
+    display: flex; /* Usar flexbox para alinear los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se apilen si el espacio es insuficiente */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    align-items: center; /* Centra los elementos verticalmente */
+    max-width: 1200px; /* Ancho máximo de la sección */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Imagen del director */
+.director-image img {
+    width: 300px; /* Ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Descripción del director */
+.director-description {
+    flex: 1; /* Toma el espacio restante disponible */
+    color: #ffffff; /* Color del texto */
+}
+
+.director-description h2 {
+    font-size: 1.8rem; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #FFAF36; /* Color del título */
+}
+
+.director-description p {
+    font-size: 1rem; /* Tamaño del texto */
+    line-height: 1.6; /* Altura de línea para mejor lectura */
+}
+
+/* Contenedor del título */
+.title-container {
+    display: flex; /* Usamos Flexbox para centrar */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Margen automático para centrar el contenedor */
+    width: 80%; /* Ancho relativo al contenedor padre */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: center;
+}
+
+/* Estilo para el texto dentro del título */
+.title-container h2 {
+    color: #fff; /* Color del texto */
+    font-size: 2rem; /* Tamaño del texto */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-weight: bold; /* Negrita */
+    margin: 0; /* Quitar margen por defecto */
+}
+/* Estilos adicionales para el carrusel */
+.swiper {
+    width: 80%;  /* Ajusta el ancho del carrusel al 80% del contenedor padre */
+    max-width: 800px;  /* Limita el ancho máximo del carrusel */
+    height: 650px; /* Ajusta la altura del carrusel */
+    margin: 0 auto; /* Centra el carrusel en la página */
+}
+
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    max-height: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+}
+
+/* Estilo para los botones de navegación */
+.swiper-button-next, .swiper-button-prev {
+    color: #fff; /* Color de las flechas */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para las flechas */
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 10;
+}
+
+
 /* Estilos para el cuerpo del documento */
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('videoseguridad.gif'); /* Ruta de tu imagen animada */
-    background-size: cover;
-    background-position: top; /* Ajusta la posición para que comience desde arriba */
-    color: #333;
+    font-family: "Open Sans", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    animation: animatedBackground 60s linear infinite; /* Animación de fondo */
+    background: linear-gradient(135deg, #1a1a1a, #333333, #0d0d0d); /* Degradado metálico oscuro */
+    background-size: 300% 300%; /* Tamaño grande para animación suave */
+    animation: metallicEffectDark 8s infinite; /* Animación de brillo */
+    color: #333; /* Color de texto para buen contraste */
 }
 
-/* Estilos para títulos */
-h1, h2, h3 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/* Animación del fondo metálico */
+@keyframes metallicEffect {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-/* Estilos para listas */
-li {
-    font-family: Arial, sans-serif;
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF; /* Color del botón */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
+
+.btn:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+}
+
 
 /* Estilos para el header */
 header {
-    background-color: #403E41;
+    background-color: #1A1A1A;
     color: #fff;
     padding: 10px; /* Reduce el padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .header-container {
@@ -48,7 +241,7 @@ header .logo-nombre {
 
 /* Estilos para la navegación */
 nav {
-    background-color: #444;
+    background-color: #333;
 }
 
 nav ul {
@@ -63,7 +256,7 @@ nav ul li {
 }
 
 nav ul li a {
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     color: #fff; /* Color del texto de los enlaces */
     text-decoration: none;
     padding: 10px 20px;
@@ -72,13 +265,28 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #666;
-    color: #fff;
+    background-color: #555;
 }
 
 nav ul li a.active {
-    background-color: #666; /* Fondo del enlace activo */
+    background-color: #555; /* Fondo del enlace activo */
     color: #fff; /* Color del texto del enlace activo */
+}
+
+
+/* Estilo cuando el header está reducido */
+header.scroll {
+    padding: 5px 10px; /* Reduce aún más el padding */
+    background-color: #0F0F0F; /* Oscurece un poco el fondo */
+    transition: padding 0.3s ease, background-color 0.3s ease; /* Transiciones suaves */
+}
+
+header.scroll img {
+    width: 60px; /* Reduce el tamaño de la imagen */
+}
+
+header.scroll .logo-nombre {
+    width: 120px; /* Ajusta el tamaño del logo */
 }
 
 
@@ -86,8 +294,8 @@ nav ul li a.active {
 .container {
     max-width: 1200px;
     margin: 20px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7 );
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
@@ -95,7 +303,7 @@ nav ul li a.active {
 
 /* Estilos para el footer */
 footer {
-    background-color: #333;
+    background-color: #1A1A1A;
     color: #fff;
     text-align: center; /* Asegura que el texto esté centrado */
     padding: 10px;
@@ -103,10 +311,12 @@ footer {
     width: 100%;
 }
 
-
 /* Estilos para títulos */
-h1, h2, h3 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+h1 {
+    font-weight: 700; /* Opciones: normal, bold, 700, 800, etc. */
+}
+h2, h3 {
+    font-family: "Open Sans", Arial, sans-serif;
     color: #333;
 }
 
@@ -125,32 +335,42 @@ ul li strong {
     color: #333;
 }
 
+
 /* Estilos para el acordeón */
 .accordion {
-    background-color: rgba(238, 238, 238, 0.8);
-    color: #444;
+    background-color: rgba(200, 200, 200, 0.9); /* Color base #96A2A6 con transparencia */
+    color: #333; /* Texto blanco para el acordeón */
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 98%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
 }
 
+.accordion-container {
+    width: 110%; /* Asegura que el contenedor tenga el 100% de ancho disponible */
+    overflow: hidden; /* Evita que los elementos se desborden */
+    padding: 10px 0; /* Ajusta el espacio alrededor del acordeón */
+    box-sizing: border-box; /* Asegura que el padding no sobrecargue el ancho */
+}
+
 .active, .accordion:hover {
-    background-color: rgba(204, 204, 204, 0.8);
+    background-color: rgba(200, 200, 200, 0.9); /* Gama más oscura al interactuar */
 }
 
 .panel {
     padding: 18px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(200, 200, 200, 0.9); /* Mantiene el mismo color para el fondo del panel */
+    color: #333; /* Letras oscuras para el contenido */
     display: none;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     box-sizing: border-box;
 }
+
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
